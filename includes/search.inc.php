@@ -36,7 +36,7 @@
 						?>
 			</li>
 
-			<li id="search">
+			<!-- <li id="search">
 				<h2>Search</h2>
 				<form method="GET" action="search_result.php">
 					<fieldset>
@@ -44,34 +44,29 @@
 					<input type="submit" id="x" value="Search" />
 					</fieldset>
 				</form>
-			</li>
-			<li>
+			</li> -->
+			<!-- <li>
 				<h2>Categories</h2>
-				<ul>
+				<ul> -->
 					
-					
-					<!--
-					<li><a href="#">Economics</a></li>
-					
-					-->
 								<?php
-										$link=mysqli_connect("localhost","root","")or die("Can't Connect...");
+										// $link=mysqli_connect("localhost","root","")or die("Can't Connect...");
 			
-										mysqli_select_db($link,"shop") or die("Can't Connect to Database...");
+										// mysqli_select_db($link,"shop") or die("Can't Connect to Database...");
 			
-										$query="select * from category ";
+										// $query="select * from category ";
 			
-										$res=mysqli_query($link,$query);
+										// $res=mysqli_query($link,$query);
 											
-										while($row=mysqli_fetch_assoc($res))
-											{
-												echo '<li><a href="subcat.php?cat='.$row['cat_id'].'&catnm='.$row["cat_nm"].'">'.$row["cat_nm"].'</a></li>';
+										// while($row=mysqli_fetch_assoc($res))
+										// 	{
+										// 		echo '<li><a href="subcat.php?cat='.$row['cat_id'].'&catnm='.$row["cat_nm"].'">'.$row["cat_nm"].'</a></li>';
 												
-											}
+										// 	}
 			
-											mysqli_close($link);
+										// 	mysqli_close($link);
 								?>
-				</ul>
-			</li>
+				<!-- </ul>
+			</li> -->
 			
 		</ul>

@@ -14,10 +14,10 @@
 			$msg.="<li>Please Enter your Password Again.....";
 		}
 		
-		if(!ereg("^[a-z0-9_]+[a-z0-9_.]*@[a-z0-9_-]+[a-z0-9_.-]*\.[a-z]{2,5}$",$_POST['mail']))
-		{
-			$msg.="<li>Please Enter Your Valid Email Address...";
-		}
+		// if(!ereg("^[a-z0-9_]+[a-z0-9_.]*@[a-z0-9_-]+[a-z0-9_.-]*\.[a-z]{2,5}$",$_POST['mail']))
+		// {
+		// 	$msg.="<li>Please Enter Your Valid Email Address...";
+		// }
 		
 		
 		if(strlen($_POST['pwd'])>10)
@@ -46,14 +46,14 @@
 			
 			
 		
-			$link=mysql_connect("localhost","root","")or die("Can't Connect...");
+			$link=mysqli_connect("localhost","root","")or die("Can't Connect...");
 			
-			mysql_select_db($link,"shop") or die("Can't Connect to Database...");
+			mysqli_select_db($link,"shop") or die("Can't Connect to Database...");
 			
 			$query="insert into user(u_fnm,u_unm,u_pwd,u_gender,u_email,u_contact,u_city)
 			values('$fnm','$unm','$pwd','$gender','$email','$contact','$city')";
 			
-			mysql_query($link,$query) or die("Can't Execute Query...");
+			mysqli_query($link,$query) or die("Can't Execute Query...");
 			header("location:register.php?ok=1");
 		}
 	}

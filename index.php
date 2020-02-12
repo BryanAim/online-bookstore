@@ -94,46 +94,46 @@
 							</h1>
 							<div class="entry">
 								<br>
-								<p>
+								<!-- <p>
 								The OnLineBookstore is a venture of ABC Company. <a href="developer.php"><font color="purple">Himel & Sabbir</font></a> founded
 								ABC Company.
-								</p>
+								</p> -->
 							
-							<div id="content">
+							<!-- <div id="content">
 								<div class="post">
 									<h1 class="title">Latest Books</h1>
 									<div class="entry">
 										
-										<table border="10" width="100%" >
+										<table border="10" width="100%" > -->
 											
 											<?php
 												
-												$k=($page_current_page-1)*$page_per_page;
+												// $k=($page_current_page-1)*$page_per_page;
 											
-												$query="select *from book ORDER BY b_id DESC LIMIT 8";
+												// $query="select *from book ORDER BY b_id DESC LIMIT 8";
 	
-												$res=mysqli_query($link,$query) or die("Can't Execute Query...");
+												// $res=mysqli_query($link,$query) or die("Can't Execute Query...");
 	
-												$count=0;
-												while($row=mysqli_fetch_assoc($res))
-												{
-													if($count==0)
-													{
-														echo '<tr>';
-													}	
-													echo '<td valign="top" width="20%" align="center">
-														<a href="detail.php?id='.$row['b_id'].'&cat='.$_GET['subcatnm'].'">
-														<img src="'.$row['b_img'].'" width="80" height="100">
-														<br>'.$row['b_nm'].'</a>
-													</td>';
-													$count++;							
+												// $count=0;
+												// while($row=mysqli_fetch_assoc($res))
+												// {
+												// 	if($count==0)
+												// 	{
+												// 		echo '<tr>';
+												// 	}	
+												// 	echo '<td valign="top" width="20%" align="center">
+												// 		<a href="detail.php?id='.$row['b_id'].'&cat='.$_GET['subcatnm'].'">
+												// 		<img src="'.$row['b_img'].'" width="80" height="100">
+												// 		<br>'.$row['b_nm'].'</a>
+												// 	</td>';
+												// 	$count++;							
 													
-													if($count==2)
-													{
-														echo '</tr>';
-														$count=0;
-													}
-												}
+												// 	if($count==2)
+												// 	{
+												// 		echo '</tr>';
+												// 		$count=0;
+												// 	}
+												// }
 											?>
 											
 										</table>
@@ -154,11 +154,13 @@
 					<!-- end content -->
 					
 					<!-- start sidebar -->
+				
 					<div id="sidebar">
 							<?php
 								include("includes/search.inc.php");
 							?>
 					</div>
+					
 					<!-- end sidebar -->
 					<div style="clear: both;">&nbsp;</div>
 				</div>

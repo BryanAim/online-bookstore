@@ -120,10 +120,10 @@
 												<tr><td>&nbsp;</tr>
 												
 												
-												<tr>
+												<!-- <tr>
 													<td><b>Address:</b>&nbsp;&nbsp;</td>
 													<td><input type='text' name="city" size="30"></td>	
-												</tr>
+												</tr> -->
 												
 												<tr><td>&nbsp;</tr>
 												

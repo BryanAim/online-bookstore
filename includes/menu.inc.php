@@ -14,8 +14,8 @@
 			?>
 			
 			
-			<li class="last"><a href="contact.php">Contact</a></li>
+			<!-- <li class="last"><a href="contact.php">Contact</a></li>
 			<li class="last"><a href="aboutus.php">About Us</a></li>
-			<li><a href="viewcart.php">View Cart</a></li>
+			<li><a href="viewcart.php">View Cart</a></li> -->
 			
 </ul>
