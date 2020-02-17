@@ -38,7 +38,7 @@
 							<div id="content">
 					
 								<div class="post">
-									<h1 class="title">Welcome to Registeration.</h1>
+									<h1 class="title">Register to join Us</h1>
 
 									<div class="entry">
 									<br><br>
@@ -52,7 +52,7 @@
 											
 											if(isset($_GET['ok']))
 											{   
-											    echo "<script type=\"text/javascript\">alert('Registration Successfully ');</script>";
+											    echo "<script type=\"text/javascript\">alert('Registration Successful ');</script>";
  												echo '<font color="blue">You are successfully Registered..</font>';
 												echo '<br><br>';
 											}
