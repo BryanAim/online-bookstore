@@ -306,8 +306,6 @@ input, textarea, select {
 
 /* Search */
 
-#search {
-}
 
 #search h2 {
 	margin-bottom: 20px;
@@ -374,8 +372,6 @@ html>body #footer {
 	height: auto;
 }
 
-#footer p {
-}
 
 #legal {
 	clear: both;
