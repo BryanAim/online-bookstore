@@ -88,7 +88,7 @@
 								}
 								else
 								{	
-									echo 'Book Shop';
+									echo 'Ololchike Book Shop';
 								}
 							?>
 							</h1>
